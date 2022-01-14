@@ -1,4 +1,5 @@
-import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/CarRepositoryInMemory"
+
+import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/CarsRepositoryInMemory"
 import { SpecificationsRepositoryInMemory } from "@modules/cars/repositories/in-memory/SpecificationRepositoryInMemory"
 import { AppError } from "@shared/errors/AppError"
 import { CreateCarSpecificationUseCase } from "./CreateCarSpecificationUseCase"
@@ -15,13 +16,12 @@ describe("Create Car Specification", () => {
     createCarSpecificationUseCase = new CreateCarSpecificationUseCase(carsRepositoryInMemory, specificationsRepositoryInMemory)
   })
 
-  it("should not be able to add a new specification to a now-existent car", () => {
-    expect(async ()=>{
-      const car_id = "12345"
-      const specifications_id = ["54321"]
-
-      await createCarSpecificationUseCase.execute({car_id, specifications_id})
-    }).rejects.toBeInstanceOf(AppError)
+  it("should not be able to add a new specification to a now-existent car", async () => {
+    const car_id = "12345"
+    const specifications_id = ["54321"]
+    
+    await expect(createCarSpecificationUseCase.execute({car_id, specifications_id})
+    ).rejects.toEqual(new AppError("Car does not exist!"))
   })
 
   it("should be able to add a new specification to the car", async () => {
