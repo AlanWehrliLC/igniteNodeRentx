@@ -70,21 +70,21 @@ Project created in a Rocketseat training program.
 ## Devolução de carro
 
 **Requisitos funcionais**
-- [] Deve ser possivel fazer a devolução de um carro.
+- [x] Deve ser possivel fazer a devolução de um carro.
 
 **Regras de negócio**
-- [] Se o carro for devlvido com menos de 24 horas, deverá ser cobrado á diária completa.
-- [] Ao realizar a devolução, o carro deverá ser liberado para outro aluguel.
-- [] Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.
-- [] Ao realizar a devolução, deverá ser calculado o total do aluguel.
-- [] Caso o horário de devolução seja superior ao horário de previsto de entrega, deverá ser cobrado multa proporcional aos dias de atraso.
-- [] Caso haja multa, deverá ser somado ao total do aluguel.
-- [] O usuário deve estar logado na aplicação.
+- [x] Se o carro for devlvido com menos de 24 horas, deverá ser cobrado á diária completa.
+- [x] Ao realizar a devolução, o carro deverá ser liberado para outro aluguel.
+- [x] Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.
+- [x] Ao realizar a devolução, deverá ser calculado o total do aluguel.
+- [x] Caso o horário de devolução seja superior ao horário de previsto de entrega, deverá ser cobrado multa proporcional aos dias de atraso.
+- [x] Caso haja multa, deverá ser somado ao total do aluguel.
+- [x] O usuário deve estar logado na aplicação.
 
 ## Listagen de alugueis para o usuário
 
 **Requisitos funcionais**
-- [] Deve ser possivel realizar a busca de todos os alugueis para o usuário.
+- [x] Deve ser possivel realizar a busca de todos os alugueis para o usuário.
 
 **Regras de negócio**
-- [] O usuário deve estar logado na aplicação.
+- [x] O usuário deve estar logado na aplicação.
