@@ -25,8 +25,6 @@ categoriesRoutes.post(
 
 categoriesRoutes.get(
   "/",
-  ensureAuthenticated,
-  ensureAdmin,
   listCategoriesController.handle)
 
 categoriesRoutes.post("/import", upload.single("file"), importCategoryController.handle)

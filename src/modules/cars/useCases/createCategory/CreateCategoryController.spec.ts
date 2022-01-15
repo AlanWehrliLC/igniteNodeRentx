@@ -42,7 +42,9 @@ describe("Create Category Controller", () => {
       name: "Category Supertest",
       description: "Category Supertest"
     }).set(
-      'Authorization', `Bearer ${token}`
+      {
+        Authorization: `Bearer ${token}`
+      }
     )
 
     expect(response.status).toBe(201)
