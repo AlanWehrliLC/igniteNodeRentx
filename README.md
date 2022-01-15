@@ -88,3 +88,14 @@ Project created in a Rocketseat training program.
 
 **Regras de negócio**
 - [x] O usuário deve estar logado na aplicação.
+
+## Recuperação de senha
+
+**Requisitos funcionais**
+- [] Deve ser possível recuperar a senha informando o e-mail.
+- [] O usuário deve receber um e-mail com o passo a passo para a recuperação de senha.
+- [] O usuário deve conseguir inserir uma nova senha.
+
+**Regras de negócio**
+- [] O usuário precisa informar uma nova senha.
+- [] O link enviado para a recuperação deve expirar em 3 horas.
