@@ -7,7 +7,6 @@ import createConnection from "@shared/infra/typeorm"
 
 import '@shared/container'
 
-
 import { router } from "./routes"
 import { AppError } from "@shared/errors/AppError"
 import swaggerFile from "../../../swagger.json"
@@ -15,7 +14,8 @@ import upload from "@config/upload"
 import cors from "cors"
 
 createConnection()
-const app = express();
+
+const app = express()
 
 app.use(express.json())
 
